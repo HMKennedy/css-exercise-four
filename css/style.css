@@ -1,4 +1,69 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #e4e6e8;
+  font-family: sans-serif;
   font-size: 10px;
+}
+
+.container {
+  background-color: #e4e6e8;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 150%;
+  padding-top: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5% 0;
+  height: 300px;
+}
+/*****Two Columns*****/
+@media screen and (min-width: 575px){
+  div {
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+  }
+}
+/*****Four Columns*****/
+@media screen and (min-width: 991px){
+  div {
+    width: 20%;
+  }
+}
+
+div h1 {
+  font-family: serif;
+  font-size: 2.5em;
+  text-align: left;
+  padding-left: 8%;
+  padding-top: 8%;
+  text-transform: capitalize;
+}
+
+.preview-baku {
+  background-image: url("images/baku.jpg");
+}
+
+.preview-london {
+  background-image: url("images/london.png");
+}
+
+.preview-madrid {
+  background-image: url("images/madrid.jpg");
+}
+
+.preview-rome {
+  background-image: url("images/rome.jpg");
 }
